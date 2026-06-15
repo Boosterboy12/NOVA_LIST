@@ -97,7 +97,7 @@ NOVA LIST was built around a simple philosophy:
 
 ## ⚔️ Created With Passion By
 
-# 👑 Vihaan The Legend
+#  Vihaan 
 
 ### *"Level Up Your Life, One Quest At A Time."*
 
