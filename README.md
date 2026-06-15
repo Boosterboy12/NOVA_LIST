@@ -91,6 +91,32 @@ NOVA LIST was built around a simple philosophy:
 
 ---
 
+## 📸 LEVEL UP: VISUAL PREVIEW
+
+<div align="center">
+  <p><i>Behold the interface of the legendary productivity dashboard!</i></p>
+  
+  ### 🖥️ Main Dashboard View
+  <img src="" alt="Nova List Main Dashboard" width="850" style="border-radius: 10px; border: 2px solid #00FFCC; box-shadow: 0 0 15px rgba(0, 255, 204, 0.5);">
+
+  <br><br>
+
+  <table width="100%">
+    <tr>
+      <td width="50%" align="center">
+        <h4>⚔️ Active Quests & Gold Economy</h4>
+        <img src="C:\Users\Vihaan\OneDrive\Pictures\Screenshots\Screenshot 2026-06-15 061702.png" alt="Quest System" width="100%" style="border-radius: 8px; border: 1px solid #FF007F;">
+      </td>
+      <td width="50%" align="center">
+        <h4>⏳ Pomodoro Focus Timer</h4>
+        <img src="C:\Users\Vihaan\OneDrive\Pictures\Screenshots\Screenshot 2026-06-15 064018.png" alt="Focus Timer" width="100%" style="border-radius: 8px; border: 1px solid #39FF14;">
+      </td>
+    </tr>
+  </table>
+</div>
+
+---
+
 ## 🛠️ Tech Stack & Current Build
 
 ### **Current Build Status: Production Ready**
