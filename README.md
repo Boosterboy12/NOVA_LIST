@@ -8,14 +8,14 @@
 </p>
 
 <p align="center">
-  <strong>NovaList</strong> ek minimalist, fast aur modern To-Do application hai jise aapki daily productivity ko maximize karne ke liye design kiya gaya hai. No complex setups, no heavy loading—just pure, clean task management.
+  <strong>NovaList</strong> is a minimalist, high-performance, and modern web application designed to streamline daily task management. Built with efficiency in mind, it provides a clean interface to organize, track, and execute your daily routines seamlessly without any bloated dependencies.
 </p>
 
 ---
 
-## 🚀 Tech Stack Used
+## 🚀 Tech Stack
 
-Project ko fast aur lightweight rakhne ke liye in core technologies ka use kiya gaya hai:
+Engineered using lightweight core web technologies to ensure optimal loading speeds and zero server-side overhead:
 
 <p align="left">
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
@@ -26,37 +26,37 @@ Project ko fast aur lightweight rakhne ke liye in core technologies ka use kiya 
 
 ---
 
-## ✨ Features
+## ✨ Key Features
 
-*   🎯 **Minimal & Clean UI:** Aankhon ko sukoon dene wala aur premium interface.
-*   ⚡ **Lightweight:** Bina kisi external heavy frameworks ke, pure JavaScript par chalta hai.
-*   💾 **Persistent Storage:** Aapke tasks browser band karne par bhi delete nahi honge (Local Storage backup).
-*   📱 **Responsive Design:** Laptop ho ya mobile, har screen size par ekdum perfect chalta hai.
+*   🎯 **Minimalist UI/UX:** A distraction-free, aesthetically pleasing layout optimized for focus.
+*   ⚡ **Ultra-Lightweight Architecture:** Zero frameworks, zero external dependencies—pure native performance.
+*   💾 **Persistent Local Storage:** Features client-side state preservation, ensuring tasks remain saved even after browser sessions close.
+*   📱 **Fully Responsive Layout:** Fluid design system that works flawlessly across desktops, tablets, and smartphones.
 
 ---
 
-## 🛠️ How to Run Locally
+## 🛠️ Installation & Local Deployment
 
-Aapko is project ko chalane ke liye kisi heavy local server ya VS Code extension ki zaroorat nahi hai. Bas in simple steps ko follow karein:
+This project operates entirely on the client side, eliminating the need for heavy local servers or complex development environments.
 
 1.  **Clone the Repository:**
 ```bash
     git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
     ```
-2.  **Navigate to Project Folder:**
+2.  **Navigate to the Directory:**
 ```bash
     cd your-repo-name
     ```
-3.  **Run the App:**
-    *   Simply `todo.html` (ya `index.html`) file par **double-click** karein aur aapki app browser mein live ho jayegi!
+3.  **Execute the Application:**
+    *   Simply double-click the `todo.html` (or `index.html`) file to launch the application immediately in your default web browser.
 
 ---
 
-## 📂 Project Structure
+## 📂 Project Architecture
 
 ```text
 your-repo-name/
 │
-├── todo.html          # Main HTML layout & Structure
-├── style.css          # Premium Styling & Theme Design
-└── script.js          # Core Functionality & Logic
+├── todo.html          # Core structure and semantic markup
+├── style.css          # Design tokens, typography, and theme definitions
+└── script.js          # Main application logic and state management
