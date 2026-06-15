@@ -4,7 +4,7 @@
 ### *Turn Tasks Into Epic Quests • Earn Gold • Level Up • Stay Focused*
 
 <img src="https://readme-typing-svg.demolab.com?font=Orbitron&size=24&pause=1000&color=00FFCC&center=true&vCenter=true&width=700&lines=Turn+Tasks+Into+Epic+Quests;Earn+Gold+%7C+Level+Up+%7C+Stay+Focused;Gamified+Productivity+Dashboard" alt="Nova List Typography" />
-
+</div>
 ---
 <div align="center">
 
