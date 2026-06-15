@@ -97,7 +97,7 @@ NOVA LIST was built around a simple philosophy:
   <p><i>Behold the interface of the legendary productivity dashboard!</i></p>
   
   ### 🖥️ Main Dashboard View
-  <img src="" alt="Nova List Main Dashboard" width="850" style="border-radius: 10px; border: 2px solid #00FFCC; box-shadow: 0 0 15px rgba(0, 255, 204, 0.5);">
+  <img src="https://github.com/user-attachments/assets/a514de18-f11b-4a72-bbcb-ee56c68fccc3" alt="Nova List Main Dashboard" width="850" style="border-radius: 10px; border: 2px solid #00FFCC; box-shadow: 0 0 15px rgba(0, 255, 204, 0.5);">
 
   <br><br>
 
@@ -105,7 +105,7 @@ NOVA LIST was built around a simple philosophy:
     <tr>
       <td width="50%" align="center">
         <h4>⚔️ Active Quests & Gold Economy</h4>
-        <img src="C:\Users\Vihaan\OneDrive\Pictures\Screenshots\Screenshot 2026-06-15 061702.png" alt="Quest System" width="100%" style="border-radius: 8px; border: 1px solid #FF007F;">
+        <img src="https://github.com/user-attachments/assets/b7e4ac2f-86c0-46ce-8a24-4a01f79a6bb1" alt="Quest System" width="100%" style="border-radius: 8px; border: 1px solid #FF007F;">
       </td>
       <td width="50%" align="center">
         <h4>⏳ Pomodoro Focus Timer</h4>
