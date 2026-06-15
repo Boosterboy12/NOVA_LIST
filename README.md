@@ -7,10 +7,21 @@
 
 ---
 
-<img src="https://img.shields.io/github/stars/Boosterboy12/NOVA_LIST?style=for-the-badge&color=FFD700" alt="Stars"> <img src="https://img.shields.io/github/forks/Boosterboy12/NOVA_LIST?style=for-the-badge&color=00FFCC" alt="Forks"> <img src="https://img.shields.io/github/repo-size/Boosterboy12/NOVA_LIST?style=for-the-badge&color=9400D3" alt="Size"> <img src="https://img.shields.io/github/last-commit/Boosterboy12/NOVA_LIST?style=for-the-badge&color=FF4500" alt="Last Commit">
+<div align="center">
+
+### 🛡️ SYSTEM STATUS & QUEST STATS
+
+   <img src="https://img.shields.io/github/stars/Boosterboy12/NOVA_LIST?style=for-the-badge&logo=github&logoColor=00FFCC&color=00FFCC&label=XP%20STARS" alt="Stars Badge">
+   <img src="https://img.shields.io/github/forks/Boosterboy12/NOVA_LIST?style=for-the-badge&logo=git&logoColor=FF007F&color=FF007F&label=CLONES%20%2F%20FORKS" alt="Forks Badge">
+   <img src="https://img.shields.io/github/repo-size/Boosterboy12/NOVA_LIST?style=for-the-badge&logo=shortcut&logoColor=39FF14&color=39FF14&label=QUEST%20SIZE" alt="Repo Size Badge">
+
+   <br>
+
+   <img src="https://img.shields.io/github/issues/Boosterboy12/NOVA_LIST?style=for-the-badge&logo=gitkraken&logoColor=FF9900&color=FF9900&label=ACTIVE%20BOSSES" alt="Open Issues Badge">
+   <img src="https://img.shields.io/github/last-commit/Boosterboy12/NOVA_LIST?style=for-the-badge&logo=clock&logoColor=9400D3&color=9400D3&label=LAST%20ACTION" alt="Last Commit Badge">
+   <img src="https://img.shields.io/github/license/Boosterboy12/NOVA_LIST?style=for-the-badge&logo=shield&logoColor=FFFFFF&color=444444&label=SERVER%20LAW" alt="License Badge">
 
 </div>
-
 ---
 
 ## 🚀 Overview
