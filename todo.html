@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YOU CAN DO IT </title>
+    <title>YOU CAN DO IT</title>
     
     <style>
         * {
@@ -284,14 +284,11 @@
         const questInput = document.getElementById('questInput');
         const addQuestBtn = document.getElementById('addQuestBtn');
 
-        // LocalStorage se data uthana, agar nahi hai to 0 sets karna
         let currentGold = parseInt(localStorage.getItem('warriorGold')) || 0;
-        let timer;
-        let minutes = 25; 
-        let seconds = 0;  
+        let worker;
+        let totalSeconds = 25 * 60; 
         let isTimerRunning = false;
 
-        // 10 Levels Data with custom Titles and unique text Colors
         const levelsConfig = [
             { name: "RECRUIT", req: 0, color: "#AAAAAA" },       
             { name: "NOVICE", req: 1000, color: "#00FF66" },     
@@ -305,12 +302,10 @@
             { name: "WARRIOR", req: 45000, color: "#FFD700" }    
         ];
 
-        // System jo levels aur data ko update+save karta hai
         function updateGoldAndLevel(amount) {
             currentGold += amount;
             if (currentGold < 0) currentGold = 0; 
             
-            // LocalStorage me gold save karna
             localStorage.setItem('warriorGold', currentGold);
             goldDisplay.innerText = `${currentGold} GOLD 🪙`;
 
@@ -332,11 +327,9 @@
             document.querySelector('.avatar-circle').style.borderColor = currentLevelColor;
         }
 
-        // Quests ka data localStorage me save karne ka function
         function saveQuestsToStorage() {
             const mainQuests = [];
             mainQuestsList.querySelectorAll('.quest-item span').forEach(span => {
-                // Remove the ⚔️ emoji before saving text
                 mainQuests.push(span.innerText.replace('⚔️ ', ''));
             });
 
@@ -358,7 +351,6 @@
             questItem.appendChild(textSpan);
 
             if (!isAlreadyCompleted) {
-                // Agar Quest main list me hai
                 const checkBtn = document.createElement('button');
                 checkBtn.className = 'check-btn';
                 checkBtn.innerText = 'CHECK';
@@ -366,13 +358,12 @@
                 checkBtn.addEventListener('click', () => {
                     questItem.remove(); 
                     updateGoldAndLevel(50); 
-                    createQuestElement(taskText, true); // Move to completed list
+                    createQuestElement(taskText, true); 
                     saveQuestsToStorage();
                 });
                 questItem.appendChild(checkBtn);
                 mainQuestsList.appendChild(questItem);
             } else {
-                // Agar Quest completed list me hai
                 questItem.style.borderLeft = "4px solid #888";
                 const deleteBtn = document.createElement('button');
                 deleteBtn.className = 'delete-btn';
@@ -394,7 +385,7 @@
             if (text !== "") {
                 createQuestElement(text, false);
                 questInput.value = ""; 
-                saveQuestsToStorage(); // Save changes
+                saveQuestsToStorage(); 
             }
         });
 
@@ -402,12 +393,9 @@
             if (e.key === 'Enter') addQuestBtn.click();
         });
 
-        // --- LOCAL STORAGE LOAD MECHANISM ---
         function loadSavedData() {
-            // Gold setup
             updateGoldAndLevel(0);
 
-            // Quests setup
             const savedMain = JSON.parse(localStorage.getItem('mainQuests'));
             const savedCompleted = JSON.parse(localStorage.getItem('completedQuests'));
 
@@ -415,7 +403,6 @@
                 if (savedMain) savedMain.forEach(task => createQuestElement(task, false));
                 if (savedCompleted) savedCompleted.forEach(task => createQuestElement(task, true));
             } else {
-                // Agar pehli baar open kiya hai to default tasks dikhao
                 const sampleQuests = ["Code for 25 mins", "Review Figma Design", "Fix Dashboard UI"];
                 sampleQuests.forEach(quest => createQuestElement(quest, false));
                 saveQuestsToStorage();
@@ -423,14 +410,45 @@
         }
 
         function resetBtnAndTimer() {
-            clearInterval(timer);
+            if (worker) {
+                worker.terminate();
+                worker = null;
+            }
             isTimerRunning = false;
             timerDisplay.style.display = "none";
             startBtn.innerText = "START FOCUS";
             startBtn.style.backgroundColor = "#FF3B30";
-            minutes = 25;
-            seconds = 0;
+            totalSeconds = 25 * 60;
             timerDisplay.innerText = "25:00";
+        }
+
+        // --- INLINE WEB WORKER MECHANISM FOR BACKGROUND RUNNING ---
+        function initWorker() {
+            const workerCode = `
+                let endTime;
+                let timerId;
+
+                self.onmessage = function(e) {
+                    if (e.data.action === 'start') {
+                        endTime = Date.now() + e.data.duration * 1000;
+                        
+                        timerId = setInterval(() => {
+                            let remaining = Math.round((endTime - Date.now()) / 1000);
+                            if (remaining <= 0) {
+                                clearInterval(timerId);
+                                self.postMessage({ status: 'complete' });
+                            } else {
+                                self.postMessage({ status: 'tick', remaining: remaining });
+                            }
+                        }, 250); // High frequency checking for extreme precision
+                    } else if (e.data.action === 'stop') {
+                        clearInterval(timerId);
+                    }
+                };
+            `;
+            
+            const blob = new Blob([workerCode], { type: 'application/javascript' });
+            return new Worker(URL.createObjectURL(blob));
         }
 
         function toggleFocus() {
@@ -439,34 +457,33 @@
                 alert("Timer stopped! No reward given. 🛑");
                 return;
             }
+            
             isTimerRunning = true;
             timerDisplay.style.display = "block";
             startBtn.innerText = "STOP FOCUS";
             startBtn.style.backgroundColor = "#B3261E";
             
-            timer = setInterval(() => {
-                if (seconds === 0) {
-                    if (minutes === 0) {
-                        clearInterval(timer);
-                        updateGoldAndLevel(50);
-                        alert("🎉 Focus Session Complete! You earned 50 GOLD 🪙");
-                        resetBtnAndTimer();
-                        return;
-                    }
-                    minutes--;
-                    seconds = 59;
-                } else {
-                    seconds--;
+            worker = initWorker();
+            worker.postMessage({ action: 'start', duration: totalSeconds });
+            
+            worker.onmessage = function(e) {
+                if (e.data.status === 'tick') {
+                    let currentRem = e.data.remaining;
+                    let displayMins = Math.floor(currentRem / 60);
+                    let displaySecs = currentRem % 60;
+                    
+                    displayMins = displayMins < 10 ? "0" + displayMins : displayMins;
+                    displaySecs = displaySecs < 10 ? "0" + displaySecs : displaySecs;
+                    timerDisplay.innerText = `${displayMins}:${displaySecs}`;
+                } else if (e.data.status === 'complete') {
+                    updateGoldAndLevel(50);
+                    alert("🎉 Focus Session Complete! You earned 50 GOLD 🪙");
+                    resetBtnAndTimer();
                 }
-                let displayMins = minutes < 10 ? "0" + minutes : minutes;
-                let displaySecs = seconds < 10 ? "0" + seconds : seconds;
-                timerDisplay.innerText = `${displayMins}:${displaySecs}`;
-            }, 1000);
+            };
         }
 
         startBtn.addEventListener('click', toggleFocus);
-        
-        // App start hote hi sara purana data load karein
         loadSavedData();
     </script>
 </body>
