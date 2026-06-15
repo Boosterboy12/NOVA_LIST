@@ -109,7 +109,7 @@ NOVA LIST was built around a simple philosophy:
       </td>
       <td width="50%" align="center">
         <h4>⏳ Pomodoro Focus Timer</h4>
-        <img src="[C:\Users\Vihaan\OneDrive\Pictures\Screenshots\Screenshot 2026-06-15 064018.png](https://github.com/user-attachments/assets/a814224e-5c95-4de9-a213-d421171b3fa0)" alt="Focus Timer" width="100%" style="border-radius: 8px; border: 1px solid #39FF14;">
+        <img src="https://github.com/user-attachments/assets/a814224e-5c95-4de9-a213-d421171b3fa0" alt="Focus Timer" width="100%" style="border-radius: 8px; border: 1px solid #39FF14;">
       </td>
     </tr>
   </table>
