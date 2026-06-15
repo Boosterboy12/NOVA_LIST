@@ -37,3 +37,10 @@
   <img src="https://img.shields.io/badge/Status-Active-00FFCC?style=for-the-badge">
 </a>
 </div>
+> ### 🚀 A Gamified Productivity Dashboard
+>
+> Stop managing tasks.
+>
+> Start conquering quests.
+>
+> NOVA LIST transforms productivity into an RPG-inspired experience where every completed task earns rewards, unlocks progression, and pushes you closer to becoming a legendary warrior.
