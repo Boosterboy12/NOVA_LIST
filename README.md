@@ -2,20 +2,21 @@
 
 <div align="center">
 
-<!-- Colorful Interactive Shields -->
-<a href="https://python.org"><img src="https://shields.io" alt="Python Version"></a>
-<a href="https://tensorflow.org"><img src="https://shields.io" alt="TensorFlow Standard"></a>
-<a href="https://keras.io"><img src="https://shields.io" alt="Keras Ecosystem"></a>
-<a href="https://github.com"><img src="https://shields.io" alt="Maintenance Status"></a>
+[![Python](https://img.shields.io/badge/Python-3.9+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
+[![TensorFlow](https://img.shields.io/badge/TensorFlow-2.0+-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)](https://tensorflow.org)
+[![Keras](https://img.shields.io/badge/Keras-Deep%20Learning-D00000?style=for-the-badge&logo=keras&logoColor=white)](https://keras.io)
+[![Maintenance](https://img.shields.io/badge/Maintained-Yes-00B4D8?style=for-the-badge)](https://github.com)
 
 <p align="center">
-  <b>A ultra-modern computer vision pipeline engineered to accurately decode handwritten digits using deep convolutional layer stacking and state-of-the-art activation routing.</b>
+  <b>An ultra-modern computer vision pipeline engineered to accurately decode handwritten digits using deep convolutional layer stacking and state-of-the-art activation routing.</b>
 </p>
 
-<!-- Profile Layout Avatars Section -->
-<h3>🛠️ Project Architect</h3>
-<img src="YOUR_PROFILE_PHOTO_1_PATH_OR_URL" width="120" height="120" style="border-radius: 50%; border: 3px solid #00B4D8;" alt="Developer Workspace Setup 1"/>
-<img src="YOUR_PROFILE_PHOTO_2_PATH_OR_URL" width="120" height="120" style="border-radius: 50%; border: 3px solid #FF6F00;" alt="Developer Workspace Setup 2"/>
+---
+
+### 🛠️ Project Architect
+
+<img src="YOUR_PROFILE_PHOTO_1_PATH_OR_URL" width="110" height="110" style="border-radius: 50%; border: 3px solid #00B4D8; margin: 10px;" alt="Developer Workspace Setup 1"/>
+<img src="YOUR_PROFILE_PHOTO_2_PATH_OR_URL" width="110" height="110" style="border-radius: 50%; border: 3px solid #FF6F00; margin: 10px;" alt="Developer Workspace Setup 2"/>
 
 </div>
 
@@ -55,36 +56,3 @@ Collapse elements below to peer directly into the multi-layer deep feature mappi
    ├─── [🛡️ Dropout Guard]   -> 20% Layer Disconnection to Block Structural Overfitting
    │
    └─── [📤 Output Matrix]   -> 10 Target Classes (Normalized Softmax Probabilities)
-```
-</details>
-
----
-
-## ⚙️ Operational Hyperparameter Log Matrix
-
-| Optimization Metric Layer | Runtime Target Settings | Purpose |
-| :--- | :--- | :--- |
-| **Optimizer Engine** | `Adam` | Handles adaptive stochastic backpropagation tracking |
-| **Global Base Learning Rate** | `0.001` | Sets the step acceleration resolution boundary |
-| **Parallel Batch Scale Dimension** | `64` | Optimizes spatial memory blocks directly inside cache threads |
-| **Total Optimization Ceilings**| `15 Epochs` | Bounds maximal exploration training lengths |
-| **Core Loss Evaluation Criteria**| `Sparse Categorical Crossentropy` | Measures numeric integer variations instantly |
-
----
-
-## 🏃 Quick Start Sandbox Run Execution
-
-Since this entire system is encapsulated in a unified module script file without cluttering your system with random files, getting things up and running takes just two steps:
-
-```bash
-# 1. Install standard engine components
-pip install tensorflow keras numpy
-
-# 2. Trigger the dynamic training engine pipeline
-python your_script_name.py
-```
-
-<div align="center">
-  <br/>
-  📊 <b>DAY 20 PIPELINE SYSTEM READY FOR PRODUCTION DEPLOYMENT</b>
-</div>
