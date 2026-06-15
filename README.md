@@ -6,20 +6,31 @@
 <img src="https://readme-typing-svg.demolab.com?font=Orbitron&size=24&pause=1000&color=00FFCC&center=true&vCenter=true&width=700&lines=Turn+Tasks+Into+Epic+Quests;Earn+Gold+%7C+Level+Up+%7C+Stay+Focused;Gamified+Productivity+Dashboard" alt="Nova List Typography" />
 
 ---
-
 <div align="center">
 
 ### 🛡️ SYSTEM STATUS & QUEST STATS
 
-   <img src="https://img.shields.io/github/stars/Boosterboy12/NOVA_LIST?style=for-the-badge&logo=github&logoColor=00FFCC&color=00FFCC&label=XP%20STARS" alt="Stars Badge">
-   <img src="https://img.shields.io/github/forks/Boosterboy12/NOVA_LIST?style=for-the-badge&logo=git&logoColor=FF007F&color=FF007F&label=CLONES%20%2F%20FORKS" alt="Forks Badge">
-   <img src="https://img.shields.io/github/repo-size/Boosterboy12/NOVA_LIST?style=for-the-badge&logo=shortcut&logoColor=39FF14&color=39FF14&label=QUEST%20SIZE" alt="Repo Size Badge">
+  <a href="https://github.com/Boosterboy12/NOVA_LIST/stargazers">
+    <img src="https://img.shields.io/badge/XP_STARS-00FFCC?style=for-the-badge&logo=github&logoColor=000000&labelColor=111111" alt="Stars">
+  </a>
+  <a href="https://github.com/Boosterboy12/NOVA_LIST/network/members">
+    <img src="https://img.shields.io/badge/FORKS%20%2F%20CLONES-FF007F?style=for-the-badge&logo=git&logoColor=white&labelColor=111111" alt="Forks">
+  </a>
+  <a href="https://github.com/Boosterboy12/NOVA_LIST">
+    <img src="https://img.shields.io/badge/QUEST_SIZE-39FF14?style=for-the-badge&logo=codefactor&logoColor=white&labelColor=111111" alt="Size">
+  </a>
 
-   <br>
+  <br>
 
-   <img src="https://img.shields.io/github/issues/Boosterboy12/NOVA_LIST?style=for-the-badge&logo=gitkraken&logoColor=FF9900&color=FF9900&label=ACTIVE%20BOSSES" alt="Open Issues Badge">
-   <img src="https://img.shields.io/github/last-commit/Boosterboy12/NOVA_LIST?style=for-the-badge&logo=clock&logoColor=9400D3&color=9400D3&label=LAST%20ACTION" alt="Last Commit Badge">
-   <img src="https://img.shields.io/github/license/Boosterboy12/NOVA_LIST?style=for-the-badge&logo=shield&logoColor=FFFFFF&color=444444&label=SERVER%20LAW" alt="License Badge">
+  <a href="https://github.com/Boosterboy12/NOVA_LIST/issues">
+    <img src="https://img.shields.io/badge/ACTIVE_BOSSES-FF9900?style=for-the-badge&logo=gitkraken&logoColor=white&labelColor=111111" alt="Issues">
+  </a>
+  <a href="https://github.com/Boosterboy12/NOVA_LIST/commits/main">
+    <img src="https://img.shields.io/badge/LAST_ACTION-9400D3?style=for-the-badge&logo=clock&logoColor=white&labelColor=111111" alt="Last Commit">
+  </a>
+  <a href="https://github.com/Boosterboy12/NOVA_LIST/blob/main/LICENSE">
+    <img src="https://img.shields.io/badge/SERVER_LAW-444444?style=for-the-badge&logo=probot&logoColor=white&labelColor=111111" alt="License">
+  </a>
 
 </div>
 ---
